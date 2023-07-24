@@ -7,6 +7,9 @@ input.onButtonPressed(Button.B, function () {
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showIcon(IconNames.Heart)
 })
+input.onGesture(Gesture.Shake, function () {
+    basic.showIcon(IconNames.No)
+})
 basic.forever(function () {
     basic.showLeds(`
         . # . # .
