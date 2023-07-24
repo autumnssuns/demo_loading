@@ -4,11 +4,11 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Sad)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    basic.showIcon(IconNames.Heart)
-})
 input.onGesture(Gesture.Shake, function () {
     basic.showIcon(IconNames.No)
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    basic.showIcon(IconNames.Heart)
 })
 basic.forever(function () {
     basic.showLeds(`
